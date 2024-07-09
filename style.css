@@ -1,0 +1,126 @@
+@font-face {
+  font-family: poppins;
+  src: url(./assets/fonts/poppins/Poppins-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  font-family: poppins;
+}
+p{
+  font-size: 12px;
+}
+:root {
+  /* Primary colors */
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+
+  /* Accent colors */
+  --blue: hsl(248, 32%, 49%);
+
+  /* Natural colors */
+  --Dark-blue: hsl(249, 10%, 26%);
+  --Grayish-blue: hsl(246, 25%, 77%);
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+main {
+  background-color: var(--red);
+  width: 1440px;
+  height: 100vh;
+  background-image: url(./public/bg-intro-desktop.png);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 77px;
+}
+.content {
+  color: white;
+}
+.content h1{
+  font-weight: bold;
+}
+.premium > p {
+  background-color: var(--blue);
+  height: 60px;
+  width: 540px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
+  gap: 5px;
+
+  box-shadow: 0 8px 0 0px #dc676785;
+}
+.sign-up {
+  background-color: white;
+  padding-bottom: 47px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 40px;
+  box-shadow: 0 8px 0 0px #dc676785;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sign-up input {
+  padding-left: 33px;
+  height: 56px;
+  width: 460px;
+  border-radius: 5px;
+  display: block;
+  border: 1px solid var(--Grayish-blue);
+  color: var(--Dark-blue);
+  font-weight: bold;
+  outline: none;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 410px
+}
+.sign-up .error-message{
+  font-size: 12px;
+  color: var(--red);
+  font-style: italic;
+  text-align: end;
+  display: none;
+}
+.sign-up input:focus {
+  border: 1px solid var(--blue);
+}
+.sign-up button {
+  background-color: var(--green);
+  border-radius: 5px;
+  width: 460px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 0 0 #30ba7d;
+  padding-top: 4px;
+  border: none;
+  cursor: pointer;
+}
+.sign-up p {
+  color: var(--Grayish-blue);
+}
+.sign-up p a {
+  color: var(--red);
+  font-weight: bold;
+}
